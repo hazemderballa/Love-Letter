@@ -309,6 +309,33 @@ window.addEventListener('load', ()=>{
     envelope.style.opacity = '1';
   }, 80);
 });
+function checkAnswer(){
+
+const answer=document.getElementById("answer").value.trim();
+
+if(answer==="17/9/2024"){   // غير التاريخ ده بتاريخكم
+
+document.getElementById("loginScreen").style.display="none";
+
+document.getElementById("mainSite").style.display="flex";
+
+}else{
+
+const box=document.querySelector(".login-box");
+
+box.animate([
+{transform:"translateX(-8px)"},
+{transform:"translateX(8px)"},
+{transform:"translateX(-8px)"},
+{transform:"translateX(8px)"},
+{transform:"translateX(0)"}
+],{duration:400});
+
+document.getElementById("error").innerHTML="❤️ فكري تاني يا مشمشه";
+
+}
+
+}
 
 
 // --- end of script

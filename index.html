@@ -7,10 +7,31 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div id="loginScreen" class="login-screen">
+    <div class="login-box">
+        <h2>❤️ رسالة خاصة ❤️</h2>
+
+        <h3>قبل ما تفتحي الجواب...</h3>
+
+        <p id="question">
+            ❤️ ما هو تاريخ أول مرة اتكلمنا؟
+        </p>
+
+        <input
+            type="text"
+            id="answer"
+            placeholder="اكتبي الإجابة هنا">
+
+        <button onclick="checkAnswer()">
+            فتح الرسالة 💌
+        </button>
+
+        <p id="error"></p>
+    </div>
+</div>
 
 
-<div class="scene">
-    <!-- Envelope -->
+<div class="scene" id="mainSite" style="display:none;">    <!-- Envelope -->
     <div id="envelope" class="envelope closed">
         <div class="envelope-title">
     <div class="to">إلى محبوبتي ❤️</div>
