@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Love Letter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+
+<div class="scene">
+    <!-- Envelope -->
+    <div id="envelope" class="envelope closed">
+        <div class="envelope-title">
+    <div class="to">إلى محبوبتي ❤️</div>
+    <div class="name">سووو</div>
+</div>
+      <div class="body">
+        <div class="inner"></div>
+      </div>
+      <div class="flap"></div>
+      <div id="seal" class="seal">
+        <div class="heart"></div>
+      </div>
+    </div>
+
+    <!-- Letter (hidden until opened) -->
+    <div id="letterWrap" class="letter-wrap hidden">
+      <div class="paper-stack">
+        <div class="paper back-sheet"></div>
+        <div class="paper back-sheet small"></div>
+        <div id="paper" class="paper current">
+          <div class="page">
+            <div class="front"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- After close: glowing heart and message -->
+    <div id="after" class="after hidden">
+       
+      <div class="big-heart" aria-hidden="true"></div>
+      <div class="final-text">Forever Yours ❤️</div>
+      <div id="floaters" class="floaters"></div>
+    </div>
+  </div>
+
+  <footer class="credit">
+    Made with love — click the wax heart to open
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
